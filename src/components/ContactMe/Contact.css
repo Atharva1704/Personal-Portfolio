@@ -1,0 +1,128 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.formBlock {
+  background: rgba(255, 255, 255, 0.15);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.67); */
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 55rem;
+  padding-top: 3rem;
+  margin-top: 2rem;
+  /* margin-left: 15rem; */
+}
+/* .formBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10rem 10rem;
+  max-width: 75rem;
+
+  width: 75rem;
+  background-color: rgb(50, 50, 50);
+  border-radius: 10px;
+  padding-bottom: 3rem;
+} */
+
+.Info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.leftInfo {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightInfo {
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  /* padding: 2rem 1rem; */
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* font-family: "Gill Sans Extrabold", cursive;  */
+  color: var(--primary-text-color);
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.inputText {
+  background-color: var(--background-color);
+  border: 1px solid rgba(14, 13, 13, 0.18);
+
+  padding: 15px;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 20rem;
+  color: var(--primary-text-color);
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.submits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightgreen;
+  margin: 0rem 7rem;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  height: 2rem;
+}
+
+.submits:hover {
+  cursor: pointer;
+}
+
+.Textboxs {
+  background-color: var(--background-color);
+  border: 1px solid rgba(14, 13, 13, 0.18);
+  border-radius: 5px;
+  padding: 20px 20px;
+  color: var(--primary-text-color);
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1em;
+  color: var(--primary-text-color);
+  /* background: ; */
+  /* padding: 1rem; */
+}
+input[type="date"] {
+  background-color: peachpuff;
+
+  height: 2rem;
+  width: 20rem;
+
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+
+  border-radius: 5px;
+}

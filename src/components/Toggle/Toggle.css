@@ -1,0 +1,77 @@
+.toggle-container {
+  /* position: absolute; */
+  width: 85px;
+  height: 30px;
+  margin-top: -50px;
+  margin-left: 10px; /* right: 3rem; */
+}
+
+.label {
+  width: 65px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: white;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.label svg {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  z-index: 100;
+}
+
+.label svg.sun {
+  left: 5px;
+  transition: 0.3s;
+}
+
+.label svg.moon {
+  left: 40px;
+  transition: 0.3s;
+}
+
+.toggle {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.toggle + label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+
+.toggle + label::before {
+  content: "";
+  height: 30px;
+  width: 65px;
+  border-radius: 100px;
+  background-color: var(--toggle-bg);
+  transition: background-color 250ms ease-in-out;
+}
+
+.toggle + label::after {
+  content: "";
+  margin-left: 1px;
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background-color: var(--toggle-fg);
+  position: absolute;
+  left: 0.1em;
+  transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+  
+}
+
+.toggle:checked + label::after {
+  transform: translateX(143%);
+}

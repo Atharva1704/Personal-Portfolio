@@ -1,0 +1,18 @@
+.fade-in-text {
+  color: transparent; 
+  font-size: 3rem;
+  font-weight: 700;
+  transition: color 4s; 
+}
+
+.fade-in-text.visible {
+  color: var(--foreground-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
